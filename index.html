@@ -1,113 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Developer Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .hero {
-      background: linear-gradient(135deg, #007bff, #00c6ff);
-      color: white;
-      padding: 80px 0;
-      text-align: center;
-    }
-    .section-title {
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-    .card {
-      border-radius: 1rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            /* Updated background color */
+            background-color: #000;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative; /* Needed for absolute positioning of the image */
+        }
+
+        .hero img {
+            /* Added styles for the profile picture */
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+            height: 150px;
+            object-fit: cover; /* Ensure image fills the circular area */
+            position: absolute; /* Position absolutely within the hero section */
+            top: 20px; /* Adjust vertical position */
+            left: 50%; /* Center horizontally initially */
+            transform: translateX(-50%); /* Precise horizontal centering */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for better visibility */
+            border: 5px solid white; /* Added: White border */
+        }
+
+        .hero h1{
+          margin-top: 180px;
+        }
+
+        .section-title {
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            border-radius: 1rem;
+        }
+        a{
+          color: #007bff;
+        }
+        a:hover{
+          color: #00c6ff;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="display-4">Rizma Farhana S</h1>
-      <p class="lead">Tech-Business | Problem-Solving | Continuous Learning</p>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center">About Me</h2>
-      <p class="text-center">
-        im a CSBS student passionate to solve real-world problems and understanding IT's strategic impact. Aspiring to build innovate solutions,bridge tech and business,continously learn,and contribute to open source.Always curious and open to connecting</p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-center">Skills</h2>
-      <div class="row text-center">
-        <div class="col-md-3">Android (Kotlin/Java)</div>
-        <div class="col-md-3">Back-end / Flask</div>
-        <div class="col-md-3">front-end framework / Begginer level</div>
-        <div class="col-md-3">css / MySQL</div>
-      </div>
-      <div class="row text-center mt-3">
-        <div class="col-md-3">Firebase / Firebase studio</div>
-        <div class="col-md-3">Git & GitHub</div>
-        <div class="col-md-3">Machine Learning (Python)</div>
-        <div class="col-md-3">Responsive web design / GraphQL</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center">Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Personal Portfolio Webpages</h5>
-            <p>A personal website built using HTML, CSS, Bootstrap, and deployed with GitHub Pages.</p>
-          </div>
+    <section class="hero">
+        <img src="profile.jpg" >  <div class="container">
+            <h1 class="display-4">Rizma Farhana S</h1>
+            <p class="lead">Tech-Business | Problem-Solving | Continuous Learning</p>
         </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Product Landing Page</h5>
-            <p>Targeted page built to generate interest and sales for a specific product.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Technical Documentation Page</h5>
-            <p>Essential resource for understanding, implementing, and troubleshooting a specific technology.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Tribute Page</h5>
-            <p>A webpage dedicated to honoring and celebrating the life and achievements of an individual.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="section-title">Contact</h2>
-      <p>Email: rizmafarhana4@gmail.com</p>
-      <p>LinkedIn: https://www.linkedin.com/in/rizma-farhana-404071362</p>
-      <p>GitHub: https://github.com/rizmafarhana2004</p>
-    </div>
-  </section>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">About Me</h2>
+            <p class="text-center">
+                im a CSBS student passionate to solve real-world problems and understanding IT's strategic impact. Aspiring to build innovate solutions,bridge tech and business,continously learn,and contribute to open source.Always curious and open to connecting</p>
+        </div>
+    </section>
 
-  <footer class="text-center py-3 bg-dark text-white">
-    © 2025 Rizma Farhana S. All rights reserved.
-  </footer>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-3">Android (Kotlin/Java)</div>
+                <div class="col-md-3">Back-end / Flask</div>
+                <div class="col-md-3">front-end framework / Begginer level</div>
+                <div class="col-md-3">css / MySQL</div>
+            </div>
+            <div class="row text-center mt-3">
+                <div class="col-md-3">Firebase / Firebase studio</div>
+                <div class="col-md-3">Git & GitHub</div>
+                <div class="col-md-3">Machine Learning (Python)</div>
+                <div class="col-md-3">Responsive web design / GraphQL</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-3">
+                        <h5>Personal Portfolio Webpages</h5>
+                        <p>A personal website built using HTML, CSS, Bootstrap, and deployed with GitHub Pages.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-3">
+                        <h5>Product Landing Page</h5>
+                        <p>Targeted page built to generate interest and sales for a specific product.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-3">
+                        <h5>Technical Documentation Page</h5>
+                        <p>Essential resource for understanding, implementing, and troubleshooting a specific technology.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-3">
+                        <h5>Tribute Page</h5>
+                        <p>A webpage dedicated to honoring and celebrating the life and achievements of an individual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Contact</h2>
+            <p>Email: rizmafarhana4@gmail.com</p>
+            <p>LinkedIn: https://www.linkedin.com/in/rizma-farhana-404071362</p>
+            <p>GitHub: https://github.com/rizmafarhana2004</p>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        © 2025 Rizma Farhana S. All rights reserved.
+    </footer>
 
 </body>
 </html>
